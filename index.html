@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Clinic</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0a3d62">
+</head>
+<a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank">
+    💬
+</a>
+<a href="tel:+923199608782" class="call-float">
+    📞
+</a>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
+</script>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <h2>Family Clinic</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#doctor">Doctor</a>
+        <a href="#services">Services</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <h1>Welcome to Family Clinic</h1>
+    <p>Quality Healthcare You Can Trust</p>
+    <button onclick="scrollToForm()">Book Appointment</button>
+</section>
+
+<!-- DOCTOR -->
+<section id="doctor" class="doctor">
+    <h2>Our Doctor</h2>
+    <div class="card fade-in">
+        <img src="https://earnurl.in/wp-content/uploads/2023/03/doctor-dp-for-whatsapp-medical-students-dp-20-6-.jpg">
+        <h3>Dr. Sohail</h3>
+        <p>MBBS, FCPS</p>
+        <p>10+ Years Experience</p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div>General Checkup</div>
+        <div>Child Specialist</div>
+        <div>Skin Treatment</div>
+        <div>Blood Test</div>
+    </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="appointment">
+    <h2>Book Appointment</h2>
+    <form id="form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="date" required>
+        <input type="time" required>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Imam Bargah Chowk, Adiyala Rd, Rawalpindi</p>
+    <p>📞 +92 346 8787437</p>
+
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.1234567890123!2d73.0479!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf123456789%3A0xabcdef1234567890!2sFamily%20Clinic%20Rawalpindi!5e0!3m2!1sen!2s!4v1234567890123"
+width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
+
+    <a href="https://wa.me/923199608782" class="whatsapp">WhatsApp Now</a>
+</section>
+
+<footer>
+    <p>© 2026 Family Clinic</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
