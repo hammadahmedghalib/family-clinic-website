@@ -1,97 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Family Clinic</title>
-<link rel="stylesheet" href="style.css">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0a3d62">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Clinic — Quality Healthcare in Rawalpindi</title>
+  <meta name="description" content="Family Clinic in Rawalpindi. Book an appointment with Dr. Sohail (MBBS, FCPS). General checkup, child specialist, skin treatment, blood tests." />
+  <meta name="theme-color" content="#0a3d62" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
-<a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank">
-    💬
-</a>
-<a href="tel:+923199608782" class="call-float">
-    📞
-</a>
-<script>
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
-}
-</script>
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <h2>Family Clinic</h2>
-    <nav>
+  <!-- Floating action buttons -->
+  <a href="https://wa.me/923199608782" class="fab fab-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+  <a href="tel:+923199608782" class="fab fab-call" aria-label="Call clinic">📞</a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <span class="brand-mark">✚</span>
+        <span class="brand-text">Family <strong>Clinic</strong></span>
+      </a>
+
+      <nav class="nav" id="nav">
         <a href="#home">Home</a>
         <a href="#doctor">Doctor</a>
         <a href="#services">Services</a>
         <a href="#appointment">Appointment</a>
         <a href="#contact">Contact</a>
-    </nav>
-</header>
+        <a href="#appointment" class="btn btn-primary nav-cta">Book Now</a>
+      </nav>
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <h1>Welcome to Family Clinic</h1>
-    <p>Quality Healthcare You Can Trust</p>
-    <button onclick="scrollToForm()">Book Appointment</button>
-</section>
-
-<!-- DOCTOR -->
-<section id="doctor" class="doctor">
-    <h2>Our Doctor</h2>
-    <div class="card fade-in">
-        <img src="https://earnurl.in/wp-content/uploads/2023/03/doctor-dp-for-whatsapp-medical-students-dp-20-6-.jpg">
-        <h3>Dr. Sohail</h3>
-        <p>MBBS, FCPS</p>
-        <p>10+ Years Experience</p>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-</section>
+  </header>
 
-<!-- SERVICES -->
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div>General Checkup</div>
-        <div>Child Specialist</div>
-        <div>Skin Treatment</div>
-        <div>Blood Test</div>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="pill">Trusted care in Rawalpindi</span>
+      <h1>Your Family's Health, <span class="accent">In Good Hands.</span></h1>
+      <p>Compassionate, professional healthcare for every age — from routine checkups to specialized treatment.</p>
+      <div class="hero-actions">
+        <a href="#appointment" class="btn btn-primary btn-lg">Book Appointment</a>
+        <a href="tel:+923199608782" class="btn btn-ghost btn-lg">📞 Call Clinic</a>
+      </div>
+
+      <div class="hero-stats">
+        <div><strong>10+</strong><span>Years Experience</span></div>
+        <div><strong>5,000+</strong><span>Happy Patients</span></div>
+        <div><strong>4.9★</strong><span>Patient Rating</span></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- APPOINTMENT -->
-<section id="appointment">
-    <h2>Book Appointment</h2>
-    <form id="form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <input type="date" required>
-        <input type="time" required>
-        <button type="submit">Submit</button>
-    </form>
-</section>
+  <!-- Doctor -->
+  <section id="doctor" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Meet your doctor</span>
+        <h2>Experienced. Caring. Trusted.</h2>
+      </div>
 
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Imam Bargah Chowk, Adiyala Rd, Rawalpindi</p>
-    <p>📞 +92 346 8787437</p>
+      <div class="doctor-card">
+        <div class="doctor-photo">
+          <img src="https://earnurl.in/wp-content/uploads/2023/03/doctor-dp-for-whatsapp-medical-students-dp-20-6-.jpg" alt="Dr. Sohail" />
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Sohail</h3>
+          <p class="doctor-title">MBBS, FCPS — General Physician</p>
+          <p class="doctor-bio">
+            Dr. Sohail has over a decade of experience treating families across Rawalpindi.
+            He specializes in general medicine, pediatrics, and dermatology, with a focus on
+            preventive care and long-term patient wellbeing.
+          </p>
+          <ul class="doctor-tags">
+            <li>General Medicine</li>
+            <li>Child Specialist</li>
+            <li>Skin Treatment</li>
+            <li>Diagnostics</li>
+          </ul>
+          <a href="#appointment" class="btn btn-primary">Book with Dr. Sohail</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.1234567890123!2d73.0479!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf123456789%3A0xabcdef1234567890!2sFamily%20Clinic%20Rawalpindi!5e0!3m2!1sen!2s!4v1234567890123"
-width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-</iframe>
+  <!-- Services -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What we offer</span>
+        <h2>Complete Care Under One Roof</h2>
+      </div>
 
-    <a href="https://wa.me/923199608782" class="whatsapp">WhatsApp Now</a>
-</section>
+      <div class="services">
+        <article class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3>General Checkup</h3>
+          <p>Routine examinations, prescriptions, and preventive health advice for all ages.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🧒</div>
+          <h3>Child Specialist</h3>
+          <p>Growth monitoring, vaccinations, and pediatric care from newborns to teens.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">✨</div>
+          <h3>Skin Treatment</h3>
+          <p>Acne, eczema, allergies, and general dermatology consultations.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🧪</div>
+          <h3>Blood Test</h3>
+          <p>On-site sample collection with fast and reliable lab reporting.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<footer>
-    <p>© 2026 Family Clinic</p>
-</footer>
+  <!-- Appointment -->
+  <section id="appointment" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Book a visit</span>
+        <h2>Schedule Your Appointment</h2>
+        <p class="muted">Fill the form and we'll confirm your slot on WhatsApp.</p>
+      </div>
 
-<script src="script.js"></script>
+      <form id="form" class="appointment-form" action="#" onsubmit="return false;" novalidate>
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Ahmed Khan" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="e.g. 0300 1234567"
+                 pattern="[0-9+\-\s]{7,15}" required>
+        </div>
+        <div class="field">
+          <label for="date">Preferred Date</label>
+          <input id="date" name="date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="time">Preferred Time</label>
+          <input id="time" name="time" type="time" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Confirm via WhatsApp</button>
+        <p class="form-note">By submitting, you agree to be contacted on WhatsApp.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Visit us</span>
+        <h2>Find the Clinic</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>Address</strong>
+              <p>Imam Bargah Chowk, Adiyala Rd, Rawalpindi</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+923468787437">+92 346 8787437</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💬</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <p><a href="https://wa.me/923199608782" target="_blank" rel="noopener">+92 319 9608782</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕐</span>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon – Sat: 9:00 AM – 9:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/923199608782" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.1234567890123!2d73.0479!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf123456789%3A0xabcdef1234567890!2sFamily%20Clinic%20Rawalpindi!5e0!3m2!1sen!2s!4v1234567890123"
+            title="Family Clinic Location"
+            loading="lazy"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <span class="brand-mark">✚</span>
+        <span>Family Clinic</span>
+      </div>
+      <p class="muted small">© 2026 Family Clinic, Rawalpindi. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#appointment">Book</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(console.error);
+      });
+    }
+  </script>
 </body>
 </html>
